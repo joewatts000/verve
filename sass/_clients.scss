@@ -1,0 +1,47 @@
+.clients {
+
+	font-weight: 100;
+	padding-bottom: 8rem;
+
+	.columns {
+
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;  
+		position: relative;
+		cursor: pointer;
+		cursor: hand;
+		overflow: hidden;
+		margin-bottom: 1rem;
+
+		@media(min-width: $tablet){
+			margin-left: 1%;
+			width: 15.5%;
+			// height: 20vw;
+
+			&:first-child {
+				margin-left:0;
+			}
+		}
+
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+		    object-fit: cover;
+		    transition: transform 0.5s ease-in-out;
+
+	        &:hover {
+	            transform: scale(1.2);
+	        }
+		}	
+
+		&:hover {
+			img {
+
+			}
+		}	
+	}
+}

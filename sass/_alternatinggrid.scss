@@ -1,0 +1,81 @@
+.alternating-grid {
+
+	.row {
+		margin-bottom: 0;
+
+		.columns {
+			margin: 0;
+			background-size: cover;
+			background-position: center center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;  
+			overflow: hidden;
+
+			&.six {
+				padding: 2rem;
+				
+				@media(min-width: $tablet){
+					width:50%;
+					height: 50vw;
+					padding: 0;
+				}
+			}
+
+			img {
+
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				transition: all 0.5s ease-in-out;
+
+				&:hover {
+					transform: scale(1.1);	
+				}
+			}
+
+		}
+
+		&:nth-child(odd){
+			.columns {
+				&:first-child {
+					@media(min-width: $tablet){
+						padding: 5rem;
+						background-color: rgb(236, 236, 236);
+						h2 {
+							text-align: left;
+							width: 100%;
+
+							&:after {
+
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&:nth-child(even){
+			.columns {
+				&:last-child {
+					@media(min-width: $tablet){
+						padding: 5rem;
+						background-color: rgb(236, 236, 236);
+						h2 {
+							text-align: right;
+							width: 100%;
+							position: relative;
+
+							&:after {
+								right: 0;
+								left: auto;
+								position: absolute;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

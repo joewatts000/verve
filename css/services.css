@@ -1,0 +1,13 @@
+.services {
+  padding-top: 2rem;
+  margin-top: -10rem; }
+  .services .container {
+    background-color: #fff;
+    padding: 2rem 4rem; }
+    .services .container h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      margin-top: 1rem;
+      text-transform: uppercase; }
+    .services .container img {
+      padding: 1rem 0rem; }

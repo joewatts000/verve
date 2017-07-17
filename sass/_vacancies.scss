@@ -1,0 +1,49 @@
+.vacancies {
+
+	.columns {
+	
+		background-color: $verveyellow;
+		padding: 4rem;
+		margin-bottom: 4rem;
+		color: #fff;
+
+		&:nth-child(odd){
+			background-color: $verveblue;
+		}
+
+		.button {
+			font-size: 2rem;
+			background-color: transparent;
+			border-color: #fff;
+			padding: 0 2rem;
+			margin: 2rem 0 0 0;
+		}
+
+		h3 {
+			font-weight: $heavyfont;
+			font-size: 3rem;
+			margin-bottom: 1rem;
+		}
+
+		h4 {
+
+			font-weight: $heavyfont;
+
+			&:after {
+		        content: "";
+		        display: block;
+		        position: relative;
+		        background-color: #fff;
+		        width: 50px;
+		        height: 3px;
+		        margin-top: 2rem;
+		    }
+		}
+
+		p {
+			&:nth-of-type {
+				font-size: 2rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,48 @@
+.news-boxes {
+  padding-top: 3rem; }
+  .news-boxes .four-cols {
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px; }
+    @media (min-width: 768px) {
+      .news-boxes .four-cols {
+        width: 50%; } }
+    @media (min-width: 1024px) {
+      .news-boxes .four-cols {
+        width: calc(20% - 5px);
+        margin-right: 5px;
+        margin-bottom: 5px; } }
+    .news-boxes .four-cols a {
+      display: block;
+      box-sizing: border-box; }
+    .news-boxes .four-cols img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      margin: auto; }
+    .news-boxes .four-cols .post-inner {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+      top: 0;
+      -webkit-transition: all 500ms ease-out;
+      -moz-transition: all 500ms ease-out;
+      -o-transition: all 500ms ease-out;
+      transition: all 500ms ease-out;
+      text-align: center;
+      color: #fff;
+      line-height: 100%;
+      padding-top: 45%; }
+      .news-boxes .four-cols .post-inner p {
+        font-size: 2rem;
+        text-transform: uppercase; }
+      @media (min-width: 1024px) {
+        .news-boxes .four-cols .post-inner {
+          top: 100%; } }
+    .news-boxes .four-cols a:hover .post-inner {
+      top: 0; }

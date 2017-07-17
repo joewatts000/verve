@@ -1,0 +1,144 @@
+
+.hero {
+    height:  100vh;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-size: cover;
+    background-position: top center;
+    border-bottom: 1rem solid $ververed;
+    box-sizing: content-box;
+    
+    @media(min-width: $tablet){
+        // height:  50vh;
+    }
+
+    @media(min-width: $desktop){
+        // height:  100vh;
+    }
+
+    .hero-inner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        height: 100%;
+        
+        &.alpha {
+            background:rgba(0,0,0,0.3);
+        }
+
+        .captions {
+            position: absolute;
+            top:85%;
+            left:0;
+            right: 0;
+            padding:1rem;
+            transform:translateY(-50%);
+            width: 100%;
+            max-width: 960px;
+            margin: auto;
+            text-align: center;
+            color: #fff;
+
+            &.default {
+                top: 50%;
+
+                h1 {
+                    font-size: 8rem;
+                    text-shadow: 2px 1px 5px rgba(0, 0, 00, 1);
+                }
+            }
+
+            h1 {
+                font-size: 5rem;
+                margin-bottom: 3rem;
+                font-weight: bold;
+
+                @media(min-width: $tablet){
+                    font-size: 6rem;
+                }
+            }
+
+            p {
+                font-size: 3rem;
+                line-height: 3.5rem;
+            }
+        }
+
+        .map-filter {
+            position: absolute;
+            top: auto;
+            left: 0;
+            right: 0;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            // color: #fff;
+            bottom: 0;
+            background-color: #fff;
+
+            .columns {
+                
+                height: 8rem;
+
+                &.four {
+                    margin: 0;
+                    border-radius: 0;
+                    border: 0;
+                    height: 5rem;
+                    text-transform: none;
+                    font-size: 1.8rem;
+
+                    @media(min-width: $tablet){
+                        width: 33.33%;
+                        border-left: 1px solid #ccc;
+
+                        &:last-child {
+                            border-right: 1px solid #ccc;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: #ddd;
+                    }
+
+                    &.active {
+                        color: $vervegreen;
+                    }
+                }
+            }
+        }
+
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .contact-slider {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+}

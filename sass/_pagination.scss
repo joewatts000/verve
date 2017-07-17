@@ -1,0 +1,28 @@
+.pagination {
+
+	margin-bottom: 20rem;
+	a {
+		width: 100%;
+		display: block;
+		background-color: #ccc;
+		padding: 5rem 0;
+		color: #000;
+		font-size: 3rem;
+		text-decoration: none;
+		transition: all 0.5s ease-in-out;
+
+		&:hover {
+			background-color: #3a3939;
+			color: #ccc;
+		}
+
+		@media(min-width: $tablet){
+			width: 50%;
+			float: left;
+
+			&:first-child {
+				border-right: 2px solid #3a3939;
+			}
+		}
+	}
+}

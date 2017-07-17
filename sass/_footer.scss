@@ -1,0 +1,28 @@
+footer {
+    padding:  5rem 0 1rem 0;
+    text-align: center;
+    font-size:  1.4rem;
+    background-color: $darkgrey;
+    width: 100%;
+    z-index: 9;
+    color:  #fff;
+
+    p {
+        margin-bottom: 2rem;
+
+        &.copyright {
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+    }
+
+    a {
+    	color: #fff;
+    	text-decoration: none;
+    	transition : all 0.3s ease-in-out;
+
+    	&:hover {
+    		color: #fff;
+    	}
+    }
+}

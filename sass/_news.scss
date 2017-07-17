@@ -1,0 +1,160 @@
+.news {
+	text-align: center;
+
+	h2 {
+		margin-bottom: 4em;
+	}
+
+	.columns {
+
+		border: 1px solid $vervegreen;
+		margin-bottom: 4rem;
+		position: relative;
+		background-color: #fff;
+
+		@media(min-width: $tablet){
+			width: 100%;
+			margin: 0 0 4rem 0;
+		}
+
+		@media (min-width: $desktop){	
+		    width: 30.6666666667%;
+	        margin-left: 4%;
+
+	        &:first-child {
+        	    margin-left: 0;
+	        }
+		}
+		
+		.inner {
+			display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+		    align-items: left;
+		    text-align: left;
+		    top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    height: 100%;
+		    padding: 2rem;
+
+		    @media(min-width: $desktop){
+		    	position: absolute;
+		    }
+
+		    p {
+		    	text-align: left;
+		    	width: 100%;
+		    }
+
+		    .title {
+		    	color: $vervegreen;
+		    	font-weight: 600;
+		    	font-size: 2rem;
+		    	margin-bottom: 0.2rem;
+		    }
+
+		    .meta {
+		    	font-weight: bold;
+		    	margin-bottom: 2rem;
+		    }
+
+		    .button {
+		    	border: 1px solid $bordergrey;
+		    	text-transform: capitalize;
+		    	margin-bottom: 0;
+		    	margin-top: 2rem;
+		    	font-size: 1.5rem;
+		    	font-weight: 600;
+		    	padding: 0rem 1.2rem;
+		    }
+
+		}
+
+		&:after {
+			content: "";
+			display: block;
+		    // padding-bottom: 130%;
+
+			@media(min-width: $desktop){
+				padding-bottom: 140%;
+			}
+
+			@media(min-width: $macbook){
+				padding-bottom: 100%;
+			}
+		}
+	}
+}
+
+.news-filter {
+	
+	background-color: #fff;
+	padding: 1rem;
+
+	ul {
+		margin: 0;
+		li {
+			text-align: center;
+			display: inline-block;
+			padding: 0;
+			margin: 0;
+
+			&:before {
+				display: none;
+			}
+
+			a {
+				color: #000;
+				text-decoration: none;
+				border-right: 1px solid #ccc;
+				padding: 0 2rem;
+				font-size: 1.8rem;
+			}
+
+			&:last-child {
+				a {
+					border: 0;
+				}
+			}
+		}
+	}
+}
+
+.single-post-title {
+	max-width: 800px;
+	text-align: center;
+	h1 {
+		font-weight: $heavyfont;
+		line-height: 4rem;
+	}
+}
+
+.single-post-author {
+	
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+
+	img {
+		border-radius: 50%;
+		max-width: 100px;
+		// margin: auto;
+		display: inline-block;
+		float: left;
+		margin-right: 3rem;
+	}
+
+	div {
+		margin-top: 2rem;
+	}
+}
+
+.related {
+	
+}
+
+
+
+
+

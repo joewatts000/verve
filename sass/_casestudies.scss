@@ -1,0 +1,90 @@
+.case-studies {
+	padding-bottom: 0;
+	
+	.three.columns {
+
+		overflow: hidden;
+		position: relative;
+		background-size: cover;
+		background-position: center center;
+
+		@media(min-width: $phablet){
+			width: 50%;
+			margin: 0;
+		}
+
+		@media(min-width: $tablet){
+			width: 25%;
+			margin: 0;
+		}
+
+		&:after {
+			content: "";
+			display: block;
+			padding-bottom: 100%;
+		}
+
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			transition: all 0.5s ease-in-out;
+
+			.inner {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;  
+				position: absolute;
+				top:100%;
+				bottom: 0;
+				left:0;
+				right: 0;
+				width: 100%;
+				height: 100%;
+				transition: all 0.8s ease-in-out;
+				text-align: center;
+
+				button {
+					color: #fff;
+					border-width: 2px;
+					border-color: #fff;
+					transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+					transition-delay: 0.8s;
+					padding: 0 2rem;
+					text-transform: none;
+					font-weight: $thinfont;
+					font-size: 1.6rem;
+
+					@media(min-width: $desktop){
+						padding: 0 3rem;
+					}
+				}
+
+				p {
+					color: #fff;
+					
+					&:first-child {
+						font-weight: $heavyfont;
+					}
+				}
+			}
+		}
+
+		&:hover {
+			a {
+				background-color: rgba(249, 39, 69, 0.89);
+
+				.inner {
+					top: 0;
+					// button {
+					// 	background-color: #fff;
+					// 	color: #000;
+					// }
+				}
+			}
+		}
+	}
+}
+
