@@ -8,3 +8,4 @@ Currently you'll need to copy the minified css contents of "/build/style.css" an
 
 You can upload the html files to the dev ("/dev/" on the server) first if you want or just make the changes to the php and upload direct
 
+Please start a new branch before pushing any changes to git 
